@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("4.1.1.1.1.1.1.4:1", "", "repositories", "EARoot/EA4/EA1/EA1/EA1/EA1/EA1/EA1/EA4/EA105.htm", "3.png", "17", "0", "", "Logical diagram0","{F28B0FD7-833B-4a2c-9EAD-3610433C522E}");
+tocTab[tocTab.length] = new Array("4.1.1.1.1.1.1.4:2", "", "«interface» MovieRepository", "EARoot/EA4/EA1/EA1/EA1/EA1/EA1/EA1/EA4/EA107.htm", "8.png", "48", "0", "", "Interface0","{4C2F65F1-7503-453c-BEFC-6FDB620E6080}");
+tocTab[tocTab.length] = new Array("4.1.1.1.1.1.1.4:3", "", "«interface» StaffRepository", "EARoot/EA4/EA1/EA1/EA1/EA1/EA1/EA1/EA4/EA108.htm", "8.png", "49", "0", "", "Interface0","{6DB466EF-8A14-4562-8E3A-BA941B044A14}");

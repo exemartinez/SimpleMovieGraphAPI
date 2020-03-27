@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("4.1.1.1.1.1:1", "", "sparkdigital", "EARoot/EA4/EA1/EA1/EA1/EA1/EA1/EA81.htm", "3.png", "12", "0", "", "Logical diagram0","{1AA580FE-2097-41af-A5FC-95FF06799217}");
+tocTab[tocTab.length] = new Array("4.1.1.1.1.1.1", "1", "api", "EARoot/EA4/EA1/EA1/EA1/EA1/EA1/EA83.htm", "4.png", "", "", "{EED7F7EC-226D-4540-AF72-21604844092A}", "Package");
