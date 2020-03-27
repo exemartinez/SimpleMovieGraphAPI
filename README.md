@@ -23,8 +23,12 @@ against another Neo4J server. You can test this editing resources/application.pr
 #Assumptions
 Here we detail some of the assumptions made for this small code base.
 
-* Neo4J is configured in another docker image reacheable by this 
-* 
+* Neo4J is configured in another docker image reacheable by this API by ports.
+* There is already a database created.
+* The users are expecting to receive a JSON kind of response.
+* The design has into account several possibilities and approachs. Read the comments.
+* We written this example as a mere base project to write all the other services. You should read the complete design document to understand it completely.
+
 
 
  
