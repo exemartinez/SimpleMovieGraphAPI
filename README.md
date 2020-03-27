@@ -17,8 +17,8 @@ In order to these example base project, you will need to:
     ```
      docker build -t sparklysimpleapi . && docker run -P --name sparkly sparklysimpleapi
      ```
-However, this is not an stand alone running image, we need to configure it first to connect
-against another Neo4J server. You can test this editing resources/application.properties.
+> However, this is not an stand alone running image, we need to configure it first to connect
+against another Neo4J server. You can test this editing resources/application.properties. Althought, you can run the junit test taking advantage of its embedded Neo4j distribution. 
    
 ## Assumptions
 
