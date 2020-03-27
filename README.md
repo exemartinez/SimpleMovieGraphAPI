@@ -11,14 +11,17 @@ In order to these example base project, you will need to:
 
 1. Clone the github repo https://github.com/exemartinez/SimpleMovieGraphAPI.git
 2. Import it directly to IntelliJ or other IDE (batteries included)
-3. Run the "packaging" task in Maven.
-4. Configure your IDE's plugin or local docker to build and deploy the project.
+3. This is not an stand alone running image, we need to configure it first to connect
+against another Neo4J server. You can test this editing resources/application.properties.
+4. Run the "packaging" task in Maven.
+5. Configure your IDE's plugin or local docker to build and deploy the project.
     * Ex.:
     ```
      docker build -t sparklysimpleapi . && docker run -P --name sparkly sparklysimpleapi
      ```
-> However, this is not an stand alone running image, we need to configure it first to connect
-against another Neo4J server. You can test this editing resources/application.properties. Althought, you can run the junit test taking advantage of its embedded Neo4j distribution. 
+6. Start sending request by postman!
+
+> Take into consideration that you can run the junit test taking advantage of its embedded Neo4j distribution and avoid the whole issue of having to do all the due prev setup.
    
 ## Assumptions
 
