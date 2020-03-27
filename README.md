@@ -20,7 +20,8 @@ In order to these example base project, you will need to:
 However, this is not an stand alone running image, we need to configure it first to connect
 against another Neo4J server. You can test this editing resources/application.properties.
    
-#Assumptions
+# Assumptions
+
 Here we detail some of the assumptions made for this small code base.
 
 * Neo4J is configured in another docker image reacheable by this API by ports.
