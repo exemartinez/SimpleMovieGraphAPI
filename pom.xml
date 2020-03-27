@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.sparkdigital.services</groupId>
-    <artifactId>sparkly</artifactId>
-    <version>0.1</version>
+    <artifactId>sparklysimpleapi</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>Sparkly!</name>
+    <name>SparklyMovies</name>
     <description>Kindle up your pop corn.</description>
 
     <parent>
@@ -63,7 +63,21 @@
             <artifactId>neo4j-ogm-bolt-driver</artifactId>
             <version>${neo4j-ogm.version}</version>
         </dependency>
+
+
     </dependencies>
+    <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <build>
         <plugins>

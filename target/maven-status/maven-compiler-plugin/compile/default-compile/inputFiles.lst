@@ -1,0 +1,12 @@
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/SparklyMovieApplication.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/services/MovieService.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/domain/Role.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/services/StaffService.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/builders/StaffBuilder.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/repositories/StaffRepository.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/domain/Staff.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/controllers/MovieController.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/repositories/MovieRepository.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/builders/MovieBuilder.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/controllers/StaffController.java
+/Users/hernanezequielmartinez/Documents/workspace/SparklyMovieDatabase/src/main/java/com/sparkdigital/api/domain/Movie.java
