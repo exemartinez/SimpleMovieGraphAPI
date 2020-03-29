@@ -33,6 +33,8 @@ Here we detail some of the assumptions made for this small code base.
 * The design has into account several possibilities and approachs. Read the in code comments.
 * We wrote this example as a mere base project to write all the other services. You should [read the complete design document](https://github.com/exemartinez/SimpleMovieGraphAPI/blob/master/Project%20Proposal%20-%20Solution%20Architecture.pdf) to understand it completely. 
 
+> <b>Note</b> download the pdf document in order to visualize it appropiately.
+
 
 
  
