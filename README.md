@@ -29,11 +29,23 @@ Here we detail some of the assumptions made for this small code base.
 
 * Neo4J is configured in another docker image reacheable by this API by sockets.
 * There is already a database created and in place.
+* There is Docker installed in the machine where the jar is being built.
+* There is Java SDK v1.8 at least available in th working machine.
+* There is Maven properly installed in the working machine.
+* There is an IDE that could be in use. (We suggest IntelliJ Community edition)
 * The clients are expecting to receive a JSON kind of response.
 * The design has into account several possibilities and approachs. Read the in code comments.
 * We wrote this example as a mere base project to write all the other services. You should [read the complete design document](https://github.com/exemartinez/SimpleMovieGraphAPI/blob/master/Project%20Proposal%20-%20Solution%20Architecture.pdf) to understand it completely. 
 
 > <b>Note</b> download the pdf document in order to visualize it appropiately.
+
+## GO Lang
+
+In the folder "go_example" we added three files:
+
+* compile_and_run.sh: a simple bash script with the minimum required commands to compile, and run the example.
+* Dockerfile: the docker file that you might need to run the go binary or for a later upload!
+* sparklygoapi.go: here goes the simple standalone app, implemented with juest ONE REST service of the ones implemented in the Java version. This is done as a mode of example of what can be achieved in Golang in terms of simplicity. The complete explanation of this file and design can be found in the [pdf](https://github.com/exemartinez/SimpleMovieGraphAPI/blob/master/Project%20Proposal%20-%20Solution%20Architecture.pdf), section "Final Words".
 
 
 
