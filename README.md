@@ -31,7 +31,9 @@ Here we detail some of the assumptions made for this small code base.
 * There is already a database created and in place.
 * The clients are expecting to receive a JSON kind of response.
 * The design has into account several possibilities and approachs. Read the in code comments.
-* We wrote this example as a mere base project to write all the other services. You should read the complete design document to understand it completely. {TBD}
+* We wrote this example as a mere base project to write all the other services. You should [read the complete design document](https://github.com/exemartinez/SimpleMovieGraphAPI/blob/master/Project%20Proposal%20-%20Solution%20Architecture.pdf) to understand it completely. 
+
+> <b>Note</b> download the pdf document in order to visualize it appropiately.
 
 
 
