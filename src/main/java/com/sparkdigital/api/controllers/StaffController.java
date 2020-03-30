@@ -5,10 +5,7 @@ import com.sparkdigital.api.domain.Movie;
 import com.sparkdigital.api.domain.Staff;
 import com.sparkdigital.api.services.StaffService;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
 
@@ -31,7 +28,7 @@ public class StaffController {
 	 * NOTE: we can decide to add more services here overloading the number of attributes.
 	 * I putted that here just as an example of what could be done in this architecture.
 	 */
-	@GetMapping(value="/addNewStaff", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value="/addNewStaff", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Staff addNewStaff(@RequestParam(value = "name",required = false) String name) {
 		StaffBuilder movieBuilder = new StaffBuilder();
 		Staff staff = staffService.addStaff(movieBuilder.buildRawStaffInstance(name));

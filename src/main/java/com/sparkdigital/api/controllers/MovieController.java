@@ -38,7 +38,7 @@ public class MovieController {
 	 * @param name
 	 * @return
 	 */
-	@GetMapping(value="/addNewMovie", produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value="/addNewMovie", produces = MediaType.APPLICATION_JSON_VALUE)
 	public Movie addNewMovie(@RequestParam(value = "name",required = false) String name) {
 		MovieBuilder movieBuilder = new MovieBuilder();
 		Movie movie = movieService.addMovie(movieBuilder.buildRawMovieInstance(name));

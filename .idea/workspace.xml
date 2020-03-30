@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9bce3b53-2ca6-468e-8136-afa77a417b0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/StaffController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,12 +207,12 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.SparklyMovieApplication" />
       <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="JUnit.MovieRepositoryTest" />
       <item itemvalue="JUnit.MovieRepositoryTest.testFindAllMoviewByOneActor" />
       <item itemvalue="JUnit.MovieRepositoryTest.testFindByTitle" />
       <item itemvalue="JUnit.MovieRepositoryTest.testGraph" />
-      <item itemvalue="Application.SparklyMovieApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -226,22 +228,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@642c52c5" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@642c52c5" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@111868de" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@642c52c5" type="9fbbdea:ServiceModel$ServiceNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@33416813" type="9fbbdea:ServiceModel$ServiceNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -265,7 +252,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
