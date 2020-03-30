@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9bce3b53-2ca6-468e-8136-afa77a417b0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/MovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparkdigital/api/controllers/StaffController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="JUnit.MovieRepositoryTest">
     <configuration name="SparklyMovieApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparkdigital.api.SparklyMovieApplication" />
       <module name="SparklyMovieDatabase" />
@@ -216,8 +214,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SparklyMovieApplication" />
         <item itemvalue="JUnit.MovieRepositoryTest" />
+        <item itemvalue="Application.SparklyMovieApplication" />
         <item itemvalue="JUnit.MovieRepositoryTest.testGraph" />
         <item itemvalue="JUnit.MovieRepositoryTest.testFindByTitle" />
         <item itemvalue="JUnit.MovieRepositoryTest.testFindAllMoviewByOneActor" />
