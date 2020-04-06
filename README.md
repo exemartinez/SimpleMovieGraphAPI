@@ -17,19 +17,21 @@ against another Neo4J server. You can test this editing resources/application.pr
 5. Configure your IDE's plugin or local docker to build and deploy the project.
     * Ex.:
     ```
-     docker build -t sparklysimpleapi . && docker run -P --name sparkly sparklysimpleapi
+     docker-compose up --build && docker-compose up -d
      ```
 6. Start sending request by postman!
 
 > Take into consideration that you can run the junit test taking advantage of its embedded Neo4j distribution and avoid the whole issue of having to do all the due prev setup.
+> Consider to use PostMan and the queries proposed on the folder /postman to test the app.
    
 ## Assumptions
 
 Here we detail some of the assumptions made for this small code base.
 
-* Neo4J is configured in another docker image reacheable by this API by sockets.
+* The Neo4J image deployed by docker-compose will have a user/pass of: neo4j/secret
 * There is already a database created and in place.
 * There is Docker installed in the machine where the jar is being built.
+* There is docker compose in place.
 * There is Java SDK v1.8 at least available in th working machine.
 * There is Maven properly installed in the working machine.
 * There is an IDE that could be in use. (We suggest IntelliJ Community edition)
