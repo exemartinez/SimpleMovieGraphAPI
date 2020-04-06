@@ -18,7 +18,7 @@ public interface MovieRepository extends Neo4jRepository<Movie, Long> {
 
 	Collection<Movie> findByTitleLike(@Param("title") String title);
 
-    @Query("MATCH (m:Movie)<-[r:ACTED_IN]-(a:Staff) RETURN m,r,a LIMIT {limit}")
+    @Query("MATCH (m:Movie) RETURN m LIMIT {limit}")
 	Collection<Movie> getAllMovies(@Param("limit") int limit); // limit goes just for the matter of pagination...
 
 	@Query("MATCH (m:Movie)<-[r:ACTED_IN]-(a:Staff) WHERE a.name = {name}  RETURN m,r,a")

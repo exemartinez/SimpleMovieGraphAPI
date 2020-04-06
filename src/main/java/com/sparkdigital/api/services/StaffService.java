@@ -66,8 +66,7 @@ public class StaffService {
 		if (foundStaff==null){
 			return staffRepository.save(staff);
 		}else{
-			Staff newStaff = (new StaffBuilder()).mergedStaff(foundStaff,staff);
-			return staffRepository.save(newStaff);
+			return null;
 		}
 
 	}

@@ -4,7 +4,9 @@ import com.sparkdigital.api.builders.StaffBuilder;
 import com.sparkdigital.api.domain.Movie;
 import com.sparkdigital.api.domain.Staff;
 import com.sparkdigital.api.services.StaffService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;
@@ -25,15 +27,23 @@ public class StaffController {
 
 	/**
 	 * Adds a new STAFF with the minimal mandatory data
-	 * NOTE: we can decide to add more services here overloading the number of attributes.
-	 * I putted that here just as an example of what could be done in this architecture.
 	 */
-	@PostMapping(value="/addNewStaff", produces = MediaType.APPLICATION_JSON_VALUE)
-	public Staff addNewStaff(@RequestParam(value = "name",required = false) String name) {
-		StaffBuilder movieBuilder = new StaffBuilder();
-		Staff staff = staffService.addStaff(movieBuilder.buildRawStaffInstance(name));
+	@PostMapping(value="/", produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity addNewStaff(@RequestBody Staff newStaff) {
+		Staff staff=null;
 
-		return staff;
+		try {
+			staff = staffService.addStaff(newStaff);
+		} catch (Exception e) {
+			e.printStackTrace();
+			return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+		if (staff==null){
+			return new ResponseEntity(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
+
+		return new ResponseEntity(HttpStatus.OK);
 	}
 
 }

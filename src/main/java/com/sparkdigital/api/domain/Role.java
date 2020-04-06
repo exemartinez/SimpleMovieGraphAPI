@@ -22,6 +22,9 @@ public class Role {
 	@EndNode
 	private Movie movie;
 
+	public Role(){
+
+	}
 	public Role(Movie movie, Staff staff) {
 		this.movie = movie;
 		this.staff = staff;

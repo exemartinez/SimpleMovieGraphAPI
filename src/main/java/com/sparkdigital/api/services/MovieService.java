@@ -2,6 +2,7 @@ package com.sparkdigital.api.services;
 
 
 import com.sparkdigital.api.builders.MovieBuilder;
+import com.sparkdigital.api.builders.StaffBuilder;
 import com.sparkdigital.api.domain.Movie;
 import com.sparkdigital.api.domain.Role;
 import com.sparkdigital.api.domain.Staff;
@@ -49,27 +50,16 @@ public class MovieService {
 
 	/**
 	 * Saves the NEW movie to the appropiate repository. (in this case Neo4j, but it could be anything else)
-	 * @return
 	 */
 	@Transactional
 	public Movie addMovie(Movie movie){
 
-		return movieRepository.save(movie);
-	}
+		Movie foundMovie = movieRepository.findByTitle(movie.getTitle());
 
-	/**
-	 * UPDATES the movie to the appropiate repository if it does exists.
-	 * @return
-	 */
-	@Transactional
-	public Movie addMovie(Movie movie, Long id){
-
-		if (!movieRepository.existsById(id)){
+		if (foundMovie==null){
 			return movieRepository.save(movie);
 		}else{
-			Optional<Movie> movieOld = movieRepository.findById(id);
-			Movie newMovie = (new MovieBuilder()).mergedMovie(movieOld.get(),movie);
-			return movieRepository.save(movie);
+			return null;
 		}
 
 	}
@@ -96,4 +86,19 @@ public class MovieService {
         return movieRepository.findAllMoviesByActor(actorName);
     }
 
+	/**
+	 * Handles the business logic for "what to do" when we need to update a movie data.
+	 * @return
+	 */
+	public Movie updateMovie(Movie movieUpdate) {
+
+		if (!movieRepository.existsById(movieUpdate.getId())){
+			return null;
+		}else{
+			Optional<Movie> movieOld = movieRepository.findById(movieUpdate.getId());
+			Movie newMovie = (new MovieBuilder()).mergedMovie(movieOld.get(),movieUpdate);
+			return movieRepository.save(newMovie);
+		}
+
+	}
 }

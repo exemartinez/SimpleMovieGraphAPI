@@ -15,6 +15,7 @@ import java.util.List;
 @NodeEntity
 public class Movie {
 
+
 	@Id
 	@GeneratedValue
 	private Long id;
@@ -44,6 +45,9 @@ public class Movie {
 
 	public Long getId() {
 		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getTitle() {
