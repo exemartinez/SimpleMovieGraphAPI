@@ -43,11 +43,8 @@ Here we detail some of the assumptions made for this small code base.
 
 ## GO Lang
 
-In the folder "go_example" we added three files:
+We've added a small Golang implementation of some of the ideas planted here. Find it [here]( https://github.com/exemartinez/goRestGraphExample)
 
-* compile_and_run.sh: a simple bash script with the minimum required commands to compile, and run the example.
-* Dockerfile: the docker file that you might need to run the go binary or for a later upload!
-* sparklygoapi.go: here goes the simple standalone app, implemented with juest ONE REST service of the ones implemented in the Java version. This is done as a mode of example of what can be achieved in Golang in terms of simplicity. The complete explanation of this file and design can be found in the [pdf](https://github.com/exemartinez/SimpleMovieGraphAPI/blob/master/Project%20Proposal%20-%20Solution%20Architecture.pdf), section "Final Words".
 
 
 
